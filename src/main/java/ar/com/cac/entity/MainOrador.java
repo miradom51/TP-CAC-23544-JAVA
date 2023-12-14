@@ -4,11 +4,13 @@ import java.time.LocalDate;
 
 public class MainOrador {
 
-	public static void main(String[] args) {
-		
-		Orador nuevoOrador = new Orador("Cristian", "Miranda", "correo@correo.com", "JAVA", LocalDate.now());
+    public static void main(String[] args) {
 
-		System.out.println(nuevoOrador);
-	}
+        //crear un objeto de la clase orador, que luego se enviara a la db
+        Orador nuevoOrador = new Orador("carlos", "lopez", "email@email.com", "JAVA", LocalDate.now());
+
+
+        System.out.println(nuevoOrador);
+    }
 
 }

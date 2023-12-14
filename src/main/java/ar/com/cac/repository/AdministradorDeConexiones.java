@@ -5,25 +5,25 @@ import java.sql.DriverManager;
 
 public class AdministradorDeConexiones {
 
-	//tener un metodo estatico: un metodo que se puede usar sin crear una instancia de la clase
-	//AdminitradordeConexiones.metodo()
-	public static Connection getConnection() {
-		String username = "root";
-		String password = "71-42";
-		String port = "3306";
-		String host = "localhost";
-		String dbName = "db_oradores";
-		
-		String diverName = "com.mysql.cj.jdbc.Driver";
-		
-		String dbUrl = "jdbc:mysql://"+host+":"+port+"/"+dbName + "?allowPublicKeyRetrieval=true&serverTimeZone=UTC&useSSL=false";
-			
-		//no vemos try/catch! esto se ve en spring, PERO lo vamos a usar
-		try {
-			Class.forName(diverName);
-			return DriverManager.getConnection(dbUrl, username, password);
-		}catch(Exception e) {
-			throw new IllegalArgumentException("No se pudo conectar a la db: " + dbUrl);
-		}
-	}
+    //tener un metodo estatico: un metodo que se puede usar sin crear una instancia de la clase
+    //AdminitradordeConexiones.metodo()
+    public static Connection getConnection() {
+        String username = "root";
+        String password = "secret";
+        String port = "33060";
+        String host = "localhost";
+        String dbName = "DB-23544";
+
+        String diverName = "com.mysql.cj.jdbc.Driver";
+
+        String dbUrl = "jdbc:mysql://"+host+":"+port+"/"+dbName + "?allowPublicKeyRetrieval=true&serverTimeZone=UTC&useSSL=false";
+
+        //no vemos try/catch! esto se ve en spring, PERO lo vamos a usar
+        try {
+            Class.forName(diverName);
+            return DriverManager.getConnection(dbUrl, username, password);
+        }catch(Exception e) {
+            throw new IllegalArgumentException("No se pudo conectar a la db: " + dbUrl);
+        }
+    }
 }

@@ -1,0 +1,6 @@
+
+»
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(Àà¸ûıÿÿÿÿ8Ó€§ƒÆ1
+?
+java:S3010"#Remove this assignment of "mapper".(¼œË`8Ö€§ƒÆ1
+G	java:S106"+Replace this use of System.out by a logger.(İû8î€§ƒÆ1

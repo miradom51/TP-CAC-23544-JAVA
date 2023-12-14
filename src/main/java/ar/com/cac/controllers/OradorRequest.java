@@ -5,9 +5,9 @@ public class OradorRequest {
 	private String apellido;
 	private String email;
 	private String tema;
-	
+
 	public OradorRequest() {
-		
+
 	}
 	public OradorRequest(String nombre, String apellido, String email, String tema) {
 		this.nombre = nombre;
@@ -31,5 +31,5 @@ public class OradorRequest {
 	public String getTema() {
 		return tema;
 	}
-	
+
 }
